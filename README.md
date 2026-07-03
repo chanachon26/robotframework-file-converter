@@ -1,17 +1,32 @@
-# Robot Framework File Converter
+# Robot Framework - File Converter Automation
 
-A configurable automation framework built with **Robot Framework** and **Python** for converting banking flat files into Excel reports.
+## Overview
+This project is an automation framework built with **Robot Framework + Python** to handle complex file transformation pipelines used in financial data processing.
 
-This project was designed to automate repetitive operational tasks by downloading files, processing different file formats, validating data, and generating standardized Excel outputs with minimal manual intervention.
+It supports converting and validating multiple file formats such as:
+- Fixed-length text files (.txt)
+- Pipe-delimited files
+- Excel (.xlsx)
+- CSV
+- Structured financial data feeds
+
+The system is designed for **end-to-end data conversion validation**, including backend integration with DB and SFTP.
 
 ---
 
-## Features
+## Key Features
 
-- Convert Fixed-width Text files to Excel
-- Convert Pipe-delimited files to Excel
-- Support configurable YAML settings
-- Preserve Excel templates and formulas
-- Automated SFTP file download via Jump Server
-- Database validation with MariaDB
-- Batch processing for multiple file types
+### File Processing Engine
+- Convert `.txt` (fixed-width / delimited) → `.xlsx`
+- Maintain mapping rules via YAML configuration
+- Support multi-format input pipelines
+
+### Data Integration
+- Database validation (MariaDB / SQL queries)
+- SFTP file transfer automation
+- Downstream file validation
+
+### Automation Utilities
+- Dynamic file renaming by date
+- Config-driven execution (YAML-based)
+- Reusable keyword libraries (Robot Framework)
