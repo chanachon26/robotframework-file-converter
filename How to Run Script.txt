@@ -1,0 +1,13 @@
+ใช้คำสั่ง
+
+python -m robot -v "date:20251216" -v "datepath:2025-12-16"-i GMT Tests
+
+1.แก้ไข "date:20251216" -- แก้ไขวันที่จะ Convert File
+2.แก้ไข "datepath:2025-12-16" -- แก้ไขชื่อ Path ที่จะเอาไฟล์ไปวางบน Share Drive (จำเป็นต้องต้อง Sync Onedrive มาลงที่เครื่องก่อน)
+
+
+grafana-update --output-file output.xml --job-fullname TRANSACTION_ONDEMAND --benefit-type CA --test-level UAT --test-env CTE2 --app-no 820 --project-no PRJ-2024-1420-001-999 --email-recipient o_chanachon.c@kbtg.tech --emte-minute-per-ts 60
+
+grafana-update --output-file output.xml --job-fullname TRANSACTION_ONDEMAND --benefit-type CA --test-level UAT --test-env CTE2 --app-no 757.01 --project-no PRJ-2023-1009-002-999.01 --email-recipient o_chanachon.c@kbtg.tech --emte-minute-per-ts 60
+
+pip install sshtunnel parmiko

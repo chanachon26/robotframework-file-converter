@@ -10,14 +10,7 @@ report.html
 
 *.log
 
-Output/
-
-Test_Data/
-
 .idea/
 
 .vscode/
 
-*.xlsx
-
-*.txt
