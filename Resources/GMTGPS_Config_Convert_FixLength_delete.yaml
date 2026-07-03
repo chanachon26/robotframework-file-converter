@@ -1,0 +1,66 @@
+##  GPS_449_GTSUtility  ##
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/449_GTSUtility/00757_STATEMENT_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/449_GTSUtility/00757_STATEMENT_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/449_GTSUtility" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/449_GTSUtility"
+  del_file_nm: "00757_STATEMENT_"
+  sheet_name: "convert1"
+  start_row: 10
+  column: 1
+
+##  499_ARE ##
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/499_ARE/KB001_GPSX_AREXA_JV000001_${DATE}.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/499_ARE/GPS757_ACCT_JV_BE_SL_Convert_Template_THB_JV000001__${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/499_ARE" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/499_ARE"
+  del_file_nm: "000001"
+  sheet_name: "KBGT_JV"
+  start_row: 16
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/499_ARE/KB001_GPSX_AREXA_SL000001_${DATE}.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/499_ARE/GPS757_ACCT_JV_BE_SL_Convert_Template_THB_JV000001__${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/499_ARE" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/499_ARE"
+  del_file_nm: "000001"
+  sheet_name: "KBGT_SL"
+  start_row: 14
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/499_ARE/KB001_GPSX_AREXA_JV000002_${DATE}.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/499_ARE/GPS757_ACCT_JV_BE_SL_Convert_Template_FCD_JV000002__${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/499_ARE" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/499_ARE"
+  del_file_nm: "000002"
+  sheet_name: "KBGT_JV"
+  start_row: 16
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/499_ARE/KB001_GPSX_AREXA_SL000002_${DATE}.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/499_ARE/GPS757_ACCT_JV_BE_SL_Convert_Template_FCD_JV000002__${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/499_ARE" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/499_ARE"
+  del_file_nm: "000002"
+  sheet_name: "KBGT_SL"
+  start_row: 13
+  column: 1
+
+##  GPS_618_AMLO  ##
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/618_AMLO/AMLO_0757_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/618_AMLO/AMLO_0757_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/618_AMLO" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/618_AMLO"
+  del_file_nm: "AMLO_0757_"
+  sheet_name: "AMLO"
+  start_row: 16
+  column: 2
+
+##  GPS_670_ERM-IntFraud  ##
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/670_ERM-IntFraud/GPS_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/670_ERM-IntFraud/GPS_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/670_ERM-IntFraud" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/670_ERM-IntFraud"
+  del_file_nm: "GPS_"
+  sheet_name: "Convert"
+  start_row: 5
+  column: 1

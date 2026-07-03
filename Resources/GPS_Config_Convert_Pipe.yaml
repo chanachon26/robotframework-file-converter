@@ -1,0 +1,133 @@
+############################### GPS ###############################
+### 135 SBT ###
+- input_txt: "${GPS_INPUT_path}/${DATE}/135 SBT/GPSX_SBT001_${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/135 SBT/GPSX_SBT001_${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/135 SBT" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/135 SBT"
+  del_file_nm: "GPSX_SBT001_"
+  sheet_name: "GPSX_SBT001_YYYYMMDD"
+  start_row: 8
+  column: 1
+
+### 625 TFReg ###
+- input_txt: "${GPS_INPUT_path}/${DATE}/625 TFReg/757.THBACTIV.GPS${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/625 TFReg/757.THBACTIV.GPS${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/625 TFReg" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/625 TFReg"
+  del_file_nm: "THBACTIV"
+  sheet_name: "757.THBACTIV.GPSYYYYMMDD"
+  start_row: 9
+  column: 2
+
+- input_txt: "${GPS_INPUT_path}/${DATE}/625 TFReg/GPS_FCDRecon_${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/625 TFReg/GPS_FCDRecon_${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/625 TFReg" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/625 TFReg"
+  del_file_nm: "FCDRecon"
+  sheet_name: "GPS_FCDRecon_YYYYMMDD"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GPS_INPUT_path}/${DATE}/625 TFReg/TF_SETTLEMENT_GPSX_${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/625 TFReg/TF_SETTLEMENT_GPSX_${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/625 TFReg" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/625 TFReg"
+  del_file_nm: "SETTLEMENT_GPSX"
+  sheet_name: "TF_SETTLEMENT_GPSX_YYYYMMDD"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GPS_INPUT_path}/${DATE}/625 TFReg/TFREGGPSFTU_${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/625 TFReg/TFREGGPSFTU_${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/625 TFReg" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/625 TFReg"
+  del_file_nm: "TFREGGPSFTU"
+  sheet_name: "TFREGGPSFTU_YYYYMMDD"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GPS_INPUT_path}/${DATE}/625 TFReg/TFREGGPSFTX_${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/625 TFReg/TFREGGPSFTX_${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/625 TFReg" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/625 TFReg"
+  del_file_nm: "TFREGGPSFTX_"
+  sheet_name: "TFREGGPSFTX_YYYYMMDD"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GPS_INPUT_path}/${DATE}/625 TFReg/TFREGGPSLTX_FCD_${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/625 TFReg/TFREGGPSLTX_FCD_${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/625 TFReg" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/625 TFReg"
+  del_file_nm: "TFREGGPSLTX_FCD_"
+  sheet_name: "TFREGGPSLTX_FCD_YYYYMMDD"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GPS_INPUT_path}/${DATE}/625 TFReg/TFREGGPSLTX_NRB_${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/625 TFReg/TFREGGPSLTX_NRB_${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/625 TFReg" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/625 TFReg"
+  del_file_nm: "TFREGGPSLTX_NRB_"
+  sheet_name: "TFREGGPSLTX_NRB_YYYYMMDD"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GPS_INPUT_path}/${DATE}/625 TFReg/TFREGGPSPTX_${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/625 TFReg/TFREGGPSPTX_${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/625 TFReg" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/625 TFReg"
+  del_file_nm: "TFREGGPSPTX_"
+  sheet_name: "TFREGGPSPTX_YYYYMMDD"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GPS_INPUT_path}/${DATE}/625 TFReg/TFREGGPSSUBREPEATING_FTX_${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/625 TFReg/TFREGGPSSUBREPEATING_FTX_${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/625 TFReg" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/625 TFReg"
+  del_file_nm: "TFREGGPSSUBREPEATING_FTX_"
+  sheet_name: "SUBREPEATING_FTX_YYYYMMDD"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GPS_INPUT_path}/${DATE}/625 TFReg/TFREGGPSSUBREPEATING_LTX_${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/625 TFReg/TFREGGPSSUBREPEATING_LTX_${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/625 TFReg" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/625 TFReg"
+  del_file_nm: "TFREGGPSSUBREPEATING_LTX_"
+  sheet_name: "SUBREPEATING_LTX_YYYYMMDD"
+  start_row: 9
+  column: 1
+
+
+### 718.02 EBAN ###
+- input_txt: "${GPS_INPUT_path}/${DATE}/718.02 EBAN/GPSX_BATCH_SUMMARY_${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/718.02 EBAN/GPSX_BATCH_SUMMARY_${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/718.02 EBAN" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/718.02 EBAN"
+  del_file_nm: "GPSX_BATCH_SUMMARY_"
+  sheet_name: "GPSX_BATCH_SUMMARY_YYYYMMDD"
+  start_row: 6
+  column: 1
+
+- input_txt: "${GPS_INPUT_path}/${DATE}/718.02 EBAN/GPSX_FEE_TXN_${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/718.02 EBAN/GPSX_FEE_TXN_${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/718.02 EBAN" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/718.02 EBAN"
+  del_file_nm: "GPSX_FEE_TXN_"
+  sheet_name: "Sheet2"
+  start_row: 15
+  column: 1
+
+- input_txt: "${GPS_INPUT_path}/${DATE}/718.02 EBAN/GPSX_TURNOVER_${DATE}.txt"
+  output_xlsx: "${GPS_OUTPUT_path}/718.02 EBAN/GPSX_TURNOVER_${DATE}.xlsx"
+  upload_source: "${GPS_UPLOAD_Source_File}/Source File/718.02 EBAN" 
+  upload_convert: "${GPS_UPLOAD_Convert_File}/Convert File/718.02 EBAN"
+  del_file_nm: "GPSX_TURNOVER_"
+  sheet_name: "GPSX_TURNOVER_YYYYMMDD"
+  start_row: 15
+  column: 1
+
+
+

@@ -1,0 +1,27 @@
+##  FXPUB  ##
+- input_txt: "${FXPUB_INPUT_path}/${DATE}/KB001_FXPX_AREXA_JV000001_${DATE}.dat"
+  output_xlsx: "${FXPUB_OUTPUT_path}/TS_761_Outbound_JV Accounting_00001_LD_${DATE}.xlsx"
+  upload_source: "${FXPUB_UPLOAD_Source_File}/FXPub/Raw data"
+  upload_convert: "${FXPUB_UPLOAD_Convert_File}/FXPub"
+  del_file_nm: "JV"
+  sheet_name: "JV000001"
+  start_row: 16
+  column: 1
+
+- input_txt: "${FXPUB_INPUT_path}/${DATE}/KB001_FXPX_AREXA_JV000002_${DATE}.dat"
+  output_xlsx: "${FXPUB_OUTPUT_path}/TS_761_Outbound_JV Accounting_00001_LD_${DATE}.xlsx"
+  upload_source: "${FXPUB_UPLOAD_Source_File}/FXPub/Raw data"
+  upload_convert: "${FXPUB_UPLOAD_Convert_File}/FXPub"
+  del_file_nm: "JV"
+  sheet_name: "JV000002"
+  start_row: 16
+  column: 1
+
+- input_txt: "${FXPUB_INPUT_path}/${DATE}/KB001_FXPX_AREXA_JV000003_${DATE}.dat"
+  output_xlsx: "${FXPUB_OUTPUT_path}/TS_761_Outbound_JV Accounting_00001_LD_${DATE}.xlsx"
+  upload_source: "${FXPUB_UPLOAD_Source_File}/FXPub/Raw data"
+  upload_convert: "${FXPUB_UPLOAD_Convert_File}/FXPub"
+  del_file_nm: "JV"
+  sheet_name: "JV000003"
+  start_row: 16
+  column: 1

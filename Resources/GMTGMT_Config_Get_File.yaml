@@ -1,0 +1,87 @@
+## 71802_EBAN ##
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/71802/outbound/gmt_turnover_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/71802_EBAN/gmt_turnover_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/71802/outbound/gmt_transaction_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/71802_EBAN/gmt_transaction_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/71802/outbound/gmt_settlement_kbank_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/71802_EBAN/gmt_settlement_kbank_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/71802/outbound/gmt_settlement_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/71802_EBAN/gmt_settlement_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/71802/outbound/gmt_related_ref_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/71802_EBAN/gmt_related_ref_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/71802/outbound/gmt_related_party_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/71802_EBAN/gmt_related_party_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/71802/outbound/gmt_related_fx_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/71802_EBAN/gmt_related_fx_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/71802/outbound/gmt_payment_detail_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/71802_EBAN/gmt_payment_detail_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/71802/outbound/gmt_fee_txn_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/71802_EBAN/gmt_fee_txn_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/71802/outbound/gmt_comment_note_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/71802_EBAN/gmt_comment_note_${DATE}.txt"
+
+## 590_MX AddOn ##
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00590/outbound/archives/FXPositionTX_GMTXX_FEE_${DATE}_01.dat"
+  local: "${GMTGMT_DIRECTORY}/590_MX AddOn/FXPositionTX_GMTXX_FEE_${DATE}_01.dat"
+
+## 735.01_Rtax ##
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/73501/outbound/RTAX_820_GMT_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/735.01_Rtax/RTAX_820_GMT_${DATE}.txt"
+
+## 00718_ENHD ##
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00718/outbound/gmt_settlement_paynow_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/718_ENHD/gmt_settlement_paynow_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00718/outbound/gmt_settlement_kbank_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/718_ENHD/gmt_settlement_kbank_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00718/outbound/gmt_settlement_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/718_ENHD/gmt_settlement_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00718/outbound/gmt_related_ref_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/718_ENHD/gmt_related_ref_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00718/outbound/gmt_related_party_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/718_ENHD/gmt_related_party_${DATE}.txt"
+
+## 499_ARE ##
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00499/outbound/KB001_GMTX_AREXA_SL000002_${DATE}.dat"
+  local: "${GMTGMT_DIRECTORY}/499_ARE/KB001_GMTX_AREXA_SL000002_${DATE}.dat"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00499/outbound/KB001_GMTX_AREXA_SL000001_${DATE}.dat"
+  local: "${GMTGMT_DIRECTORY}/499_ARE/KB001_GMTX_AREXA_SL000001_${DATE}.dat"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00499/outbound/KB001_GMTX_AREXA_JV000002_${DATE}.dat"
+  local: "${GMTGMT_DIRECTORY}/499_ARE/KB001_GMTX_AREXA_JV000002_${DATE}.dat"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00499/outbound/KB001_GMTX_AREXA_JV000001_${DATE}.dat"
+  local: "${GMTGMT_DIRECTORY}/499_ARE/KB001_GMTX_AREXA_JV000001_${DATE}.dat"
+
+## 135_SBT ##
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00135/outbound/GMTX_SBT001_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/135_SBT/GMTX_SBT001_${DATE}.txt"
+
+## 449_GTSUtility ##
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00449/outbound/REF_GMT_${DATE}.csv"
+  local: "${GMTGMT_DIRECTORY}/449_GTSUtility/REF_GMT_${DATE}.csv"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00449/outbound/GMT_DOCCER_${DATE}.TXT"
+  local: "${GMTGMT_DIRECTORY}/449_GTSUtility/GMT_DOCCER_${DATE}.TXT"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00449/outbound/GMT_CONSOLE_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/449_GTSUtility/GMT_CONSOLE_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00449/outbound/00820_STATEMENT_${DATE}.txt"
+  local: "${GMTGMT_DIRECTORY}/449_GTSUtility/00820_STATEMENT_${DATE}.txt"
+
+- remote: "/home/gmttester/UAT_GMT_INTERFACE/00449/outbound/GMT_CUST_${DATE_Path}.txt"
+  local: "${GMTGMT_DIRECTORY}/449_GTSUtility/GMT_CUST_${DATE_Path}.txt"

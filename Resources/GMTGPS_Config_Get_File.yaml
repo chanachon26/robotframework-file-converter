@@ -1,0 +1,112 @@
+## 135_SBT ##
+- remote: "/opt/EPA/gps/interface/00135/outbound/GPSX_SBT001_${DATE}.txt"
+  local: "${GMTGPS_DIRECTORY}/135_SBT/GPSX_SBT001_${DATE}.txt"
+
+## 157_EDW_DMS ##
+- remote: "/opt/EPA/gps/interface/00157/outbound/EDWGPSPTX_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/157_EDW_DMS/EDWGPSPTX_${DATE}.TXT"
+
+- remote: "/opt/EPA/gps/interface/00157/outbound/EDWGPSLTX_NRB_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/157_EDW_DMS/EDWGPSLTX_NRB_${DATE}.TXT"
+
+- remote: "/opt/EPA/gps/interface/00157/outbound/EDWGPSLTX_FCD_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/157_EDW_DMS/EDWGPSLTX_FCD_${DATE}.TXT"
+
+- remote: "/opt/EPA/gps/interface/00157/outbound/EDWGPSFTU_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/157_EDW_DMS/EDWGPSFTU_${DATE}.TXT"
+
+- remote: "/opt/EPA/gps/interface/00157/outbound/EDWGPSFTX_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/157_EDW_DMS/EDWGPSFTX_${DATE}.TXT"
+
+## 449_GTSUtility ##
+- remote: "/opt/EPA/gps/interface/00449/outbound/00757_STATEMENT_${DATE}.txt"
+  local: "${GMTGPS_DIRECTORY}/449_GTSUtility/00757_STATEMENT_${DATE}.txt"
+
+- remote: "/opt/EPA/gps/interface/00449/outbound/REF_GPS_${DATE}.csv"
+  local: "${GMTGPS_DIRECTORY}/449_GTSUtility/REF_GPS_${DATE}.csv"
+
+## 499_ARE ##
+- remote: "/opt/EPA/gps/interface/00499/outbound/KB001_GPSX_AREXA_JV000001_${DATE}.dat"
+  local: "${GMTGPS_DIRECTORY}/499_ARE/KB001_GPSX_AREXA_JV000001_${DATE}.dat"
+
+- remote: "/opt/EPA/gps/interface/00499/outbound/KB001_GPSX_AREXA_JV000002_${DATE}.dat"
+  local: "${GMTGPS_DIRECTORY}/499_ARE/KB001_GPSX_AREXA_JV000002_${DATE}.dat"
+
+- remote: "/opt/EPA/gps/interface/00499/outbound/KB001_GPSX_AREXA_SL000001_${DATE}.dat"
+  local: "${GMTGPS_DIRECTORY}/499_ARE/KB001_GPSX_AREXA_SL000001_${DATE}.dat"
+
+- remote: "/opt/EPA/gps/interface/00499/outbound/KB001_GPSX_AREXA_SL000002_${DATE}.dat"
+  local: "${GMTGPS_DIRECTORY}/499_ARE/KB001_GPSX_AREXA_SL000002_${DATE}.dat"
+
+## 590_MX AddOn ##
+- remote: "/opt/EPA/gps/interface/00590/outbound/incexp/archive/FXPositionTX_GPSXX_FEE_${DATE}_01.dat"
+  local: "${GMTGPS_DIRECTORY}/590_MX AddOn/FXPositionTX_GPSXX_FEE_${DATE}_01.dat"
+
+- remote: "/opt/EPA/gps/interface/00590/outbound/fx_settlement/TF_SETTLEMENT_GPS_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/590_MX AddOn/TF_SETTLEMENT_GPS_${DATE}.TXT"
+
+- remote: "/opt/EPA/gps/interface/00590/outbound/fxpos/archive/FXPositionTX_GPSXX_CTR_${DATE}_*.dat"
+  local: "${GMTGPS_DIRECTORY}/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_*.dat"
+
+- remote: "/opt/EPA/gps/interface/00590/outbound/fxpos/archive/FXPositionTX_GPSSP_CTR_${DATE}_*.dat"
+  local: "${GMTGPS_DIRECTORY}/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_*.dat"
+
+## 618_AMLO ##
+- remote: "/opt/EPA/gps/interface/00618/outbound/AMLO_0757_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/618_AMLO/AMLO_0757_${DATE}.TXT"
+
+## 625_TF-Reg ##
+- remote: "/opt/EPA/gps/interface/00625/outbound/pcbtransaction/757.THBACTIV.GPS${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/625_TF-Reg/757.THBACTIV.GPS${DATE}.TXT"
+
+- remote: "/opt/EPA/gps/interface/00625/outbound/fcdtxn/GPS_FCDRecon_${DATE}.txt"
+  local: "${GMTGPS_DIRECTORY}/625_TF-Reg/GPS_FCDRecon_${DATE}.txt"
+
+- remote: "/opt/EPA/gps/interface/00625/outbound/ftxsub/TFREGGPSSUBREPEATING_FTX_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/625_TF-Reg/TFREGGPSSUBREPEATING_FTX_${DATE}.TXT"
+
+- remote: "/opt/EPA/gps/interface/00625/outbound/ftu/TFREGGPSFTU_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/625_TF-Reg/TFREGGPSFTU_${DATE}.TXT"
+
+- remote: "/opt/EPA/gps/interface/00625/outbound/ftx/TFREGGPSFTX_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/625_TF-Reg/TFREGGPSFTX_${DATE}.TXT"
+
+- remote: "/opt/EPA/gps/interface/00625/outbound/ltxsub/TFREGGPSSUBREPEATING_LTX_${DATE}.txt"
+  local: "${GMTGPS_DIRECTORY}/625_TF-Reg/TFREGGPSSUBREPEATING_LTX_${DATE}.txt"
+
+- remote: "/opt/EPA/gps/interface/00625/outbound/ltxfcd/TFREGGPSLTX_FCD_${DATE}.txt"
+  local: "${GMTGPS_DIRECTORY}/625_TF-Reg/TFREGGPSLTX_FCD_${DATE}.txt"
+
+- remote: "/opt/EPA/gps/interface/00625/outbound/ltxnrb/TFREGGPSLTX_NRB_${DATE}.txt"
+  local: "${GMTGPS_DIRECTORY}/625_TF-Reg/TFREGGPSLTX_NRB_${DATE}.txt"
+
+- remote: "/opt/EPA/gps/interface/00625/outbound/ptx/TFREGGPSPTX_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/625_TF-Reg/TFREGGPSPTX_${DATE}.TXT"
+
+- remote: "/opt/EPA/gps/interface/00625/outbound/tfsettlement/TF_SETTLEMENT_GPSX_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/625_TF-Reg/TF_SETTLEMENT_GPSX_${DATE}.TXT"
+
+## 670_ERM-IntFraud ##
+- remote: "/opt/EPA/gps/interface/00670/outbound/GPS_${DATE}.txt"
+  local: "${GMTGPS_DIRECTORY}/670_ERM-IntFraud/GPS_${DATE}.txt"
+
+## 718.02_EBAN ##
+- remote: "/opt/EPA/gps/interface/71802/outbound/BATCH_SUMMARY/GPSX_BATCH_SUMMARY_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/718.02_EBAN/GPSX_BATCH_SUMMARY_${DATE}.TXT"
+
+- remote: "/opt/EPA/gps/interface/71802/outbound/FEE_TXN/GPSX_FEE_TXN_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/718.02_EBAN/GPSX_FEE_TXN_${DATE}.TXT"
+
+- remote: "/opt/EPA/gps/interface/71802/outbound/TURNOVER/GPSX_TURNOVER_${DATE}.TXT"
+  local: "${GMTGPS_DIRECTORY}/718.02_EBAN/GPSX_TURNOVER_${DATE}.TXT"
+
+## 735.01_Rtax ##
+- remote: "/opt/EPA/gps/interface/00735/outbound/RTAX_757_GPS_${DATE}.txt"
+  local: "${GMTGPS_DIRECTORY}/735.01_Rtax/RTAX_757_GPS_${DATE}.txt"
+
+## 516 LIPS ##
+- remote: "/opt/EPA/gps/interface/00516/outbound/archive/TN01${DATE}*.TXT"
+  local: "${GMTGPS_DIRECTORY}/516_LIPS/TN01${DATE}*.TXT"
+
+- remote: "/opt/EPA/gps/interface/00516/outbound/archive/TN02${DATE}*.TXT"
+  local: "${GMTGPS_DIRECTORY}/516_LIPS/TN02${DATE}*.TXT"

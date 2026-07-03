@@ -1,0 +1,59 @@
+- query: "SELECT * FROM OR_VIEW_COMMENT_NOTE WHERE DATE(CREATE_DATE) = '${DATE1}';"
+  saveto: "${DIRECTORY}/../Test_Data/GMTGPS/${DATE}/OR_VIEW_COMMENT_NOTE_${DATE}.xlsx"
+  uploadto: "${GMT_UPLOAD_Convert_File}/GPS/GPS View"
+  del_file_nm: "OR_VIEW_COMMENT_NOTE_"
+
+- query: "SELECT * FROM OR_VIEW_CUSTOMER_PROFILE_TSS;"
+  saveto: "${DIRECTORY}/../Test_Data/GMTGPS/${DATE}/OR_VIEW_CUSTOMER_PROFILE_TSS_${DATE}.xlsx"
+  uploadto: "${GMT_UPLOAD_Convert_File}/GPS/GPS View"
+  del_file_nm: "OR_VIEW_CUSTOMER_PROFILE_TSS_"
+
+- query: "SELECT * FROM OR_VIEW_SETTLEMENT_LEVEL WHERE DATE(CREATE_DATE) = '${DATE1}';"
+  saveto: "${DIRECTORY}/../Test_Data/GMTGPS/${DATE}/OR_VIEW_SETTLEMENT_LEVEL_${DATE}.xlsx"
+  uploadto: "${GMT_UPLOAD_Convert_File}/GPS/GPS View"
+  del_file_nm: "OR_VIEW_SETTLEMENT_LEVEL_"
+
+- query: "SELECT * FROM OR_VIEW_TRANSACTION_LEVEL WHERE DATE(CREATE_DATE) = '${DATE1}';"
+  saveto: "${DIRECTORY}/../Test_Data/GMTGPS/${DATE}/OR_VIEW_TRANSACTION_LEVEL_${DATE}.xlsx"
+  uploadto: "${GMT_UPLOAD_Convert_File}/GPS/GPS View"
+  del_file_nm: "OR_VIEW_TRANSACTION_LEVEL_"
+
+- query: "SELECT * FROM OR_VIEW_PAYMENT_DETAIL_LEVEL WHERE DATE(CREATE_DATE) = '${DATE1}';"
+  saveto: "${DIRECTORY}/../Test_Data/GMTGPS/${DATE}/OR_VIEW_PAYMENT_DETAIL_LEVEL_${DATE}.xlsx"
+  uploadto: "${GMT_UPLOAD_Convert_File}/GPS/GPS View"
+  del_file_nm: "OR_VIEW_PAYMENT_DETAIL_LEVEL_"
+
+- query: "SELECT * FROM OR_VIEW_SWIFT_ADDRESS WHERE DATE(CREATE_DATE) = '${DATE1}';"
+  saveto: "${DIRECTORY}/../Test_Data/GMTGPS/${DATE}/OR_VIEW_SWIFT_ADDRESS_${DATE}.xlsx"
+  uploadto: "${GMT_UPLOAD_Convert_File}/GPS/GPS View"
+  del_file_nm: "OR_VIEW_SWIFT_ADDRESS_"
+
+- query: "SELECT * FROM OR_VIEW_TRANSACTION_LEVEL WHERE DATE(UPDATE_DATE) = '${DATE1}';"
+  saveto: "${DIRECTORY}/../Test_Data/GMTGPS/${DATE}/EBAN_OR_VIEW_TRANSACTION_LEVEL_${DATE}.xlsx"
+  uploadto: "${GMT_UPLOAD_Convert_File}/GPS/GPS View for EBAN user"
+  del_file_nm: "EBAN_OR_VIEW_TRANSACTION_LEVEL_"
+
+- query: "SELECT * FROM OR_VIEW_PAYMENT_DETAIL_LEVEL WHERE DATE(UPDATE_DATE) = '${DATE1}';"
+  saveto: "${DIRECTORY}/../Test_Data/GMTGPS/${DATE}/EBAN_OR_VIEW_PAYMENT_DETAIL_LEVEL_${DATE}.xlsx"
+  uploadto: "${GMT_UPLOAD_Convert_File}/GPS/GPS View for EBAN user"
+  del_file_nm: "EBAN_OR_VIEW_PAYMENT_DETAIL_LEVEL_"
+
+- query: "SELECT * FROM OR_VIEW_SETTLEMENT_LEVEL WHERE DATE(UPDATE_DATE) = '${DATE1}';"
+  saveto: "${DIRECTORY}/../Test_Data/GMTGPS/${DATE}/EBAN_OR_VIEW_SETTLEMENT_LEVEL_${DATE}.xlsx"
+  uploadto: "${GMT_UPLOAD_Convert_File}/GPS/GPS View for EBAN user"
+  del_file_nm: "EBAN_OR_VIEW_SETTLEMENT_LEVEL_"
+
+- query: "SELECT * FROM IR_VIEW_TRANSACTION_LEVEL where DATE_FORMAT(CREATE_DATE,'%Y-%m-%d') >= DATE_FORMAT('${DATE1}','%Y-%m-%d');"
+  saveto: "${DIRECTORY}/../Test_Data/GMTGPS/${DATE}/EBAN_IR_VIEW_TRANSACTION_LEVEL_${DATE}.xlsx"
+  uploadto: "${GMT_UPLOAD_Convert_File}/GPS/GPS View for EBAN user"
+  del_file_nm: "EBAN_IR_VIEW_TRANSACTION_LEVEL_"
+
+- query: "SELECT * FROM IR_VIEW_SETTLEMENT_LEVEL where DATE_FORMAT(CREATE_DATE,'%Y-%m-%d') >= DATE_FORMAT('${DATE1}','%Y-%m-%d');"
+  saveto: "${DIRECTORY}/../Test_Data/GMTGPS/${DATE}/EBAN_IR_VIEW_SETTLEMENT_LEVEL_${DATE}.xlsx"
+  uploadto: "${GMT_UPLOAD_Convert_File}/GPS/GPS View for EBAN user"
+  del_file_nm: "EBAN_IR_VIEW_SETTLEMENT_LEVEL_"
+
+- query: "select * from IR_VIEW_INCOMING_LEVEL where DATE_FORMAT(CREATE_DATE,'%Y-%m-%d') >= DATE_FORMAT('${DATE1}','%Y-%m-%d');"
+  saveto: "${DIRECTORY}/../Test_Data/GMTGPS/${DATE}/EBAN_IR_VIEW_INCOMING_${DATE}.xlsx"
+  uploadto: "${GMT_UPLOAD_Convert_File}/GPS/GPS View for EBAN user"
+  del_file_nm: "EBAN_IR_VIEW_INCOMING_"

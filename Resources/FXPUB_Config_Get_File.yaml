@@ -1,0 +1,9 @@
+## 71802_EBAN ##
+- remote: "/app/fxpub/distribution/report/accounting/KB001_FXPX_AREXA_JV000001_${DATE}.dat"
+  local: "${FXPUB_DIRECTORY}/KB001_FXPX_AREXA_JV000001_${DATE}.dat"
+
+- remote: "/app/fxpub/distribution/report/accounting/KB001_FXPX_AREXA_JV000002_${DATE}.dat"
+  local: "${FXPUB_DIRECTORY}/KB001_FXPX_AREXA_JV000002_${DATE}.dat"
+
+- remote: "/app/fxpub/distribution/report/accounting/KB001_FXPX_AREXA_JV000003_${DATE}.dat"
+  local: "${FXPUB_DIRECTORY}/KB001_FXPX_AREXA_JV000003_${DATE}.dat"

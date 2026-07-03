@@ -1,0 +1,1446 @@
+############################### GPS ###############################
+### GPS_135_SBT ###
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/135_SBT/GPSX_SBT001_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/135_SBT/GPSX_SBT001_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/135_SBT" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/135_SBT"
+  del_file_nm: "GPSX_SBT001_"
+  sheet_name: "GPSX_SBT001"
+  start_row: 8
+  column: 1
+
+# ### GPS_590_MX AddOn  ###
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_FEE_${DATE}_01.dat" 
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_FEE_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_FEE_"
+  sheet_name: "FXPositionTX_GPSXX_FEE"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/TF_SETTLEMENT_GPS_${DATE}.txt" ### Holiday not gen ####
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/TF_SETTLEMENT_GPS_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "TF_SETTLEMENT_GPS_"
+  sheet_name: "TF_SETTLEMENT_GPSOR"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_01.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "01"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_02.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "02"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_03.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "03"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_04.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "04"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_05.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "05"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_06.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "06"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_07.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "07"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_08.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "08"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_09.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "09"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_10.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "10"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_11.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "11"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_12.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "12"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_13.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "13"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_14.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "14"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_15.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "15"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_16.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "16"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_17.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "17"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_18.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "18"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_19.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "19"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_20.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "20"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_21.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "21"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_22.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "22"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_23.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "23"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_24.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "24"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_25.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "25"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_26.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "26"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_27.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "27"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_28.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "28"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_29.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "29"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_30.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "30"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_31.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "31"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_32.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "32"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_33.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "33"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_34.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "34"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_35.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "35"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_36.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "36"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_37.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "37"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_38.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "38"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_39.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "39"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_40.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "40"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_41.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "41"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_42.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "42"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_43.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "43"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_44.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "44"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_45.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "45"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_46.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "46"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_47.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSSP_CTR_"
+  sheet_name: "47"
+  start_row: 9
+  column: 1
+  
+# - input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE}_48.dat"
+#   output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSSP_CTR_${DATE} (Spacial rate).xlsx"
+#   upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSSP" 
+#   upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+#   del_file_nm: "FXPositionTX_GPSSP_CTR_"
+#   sheet_name: "48"
+#   start_row: 9
+#   column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_01.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "01"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_02.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "02"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_03.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "03"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_04.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "04"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_05.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "05"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_06.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "06"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_07.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "07"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_08.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "08"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_09.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "09"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_10.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "10"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_11.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "11"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_12.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "12"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_13.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "13"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_14.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "14"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_15.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "15"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_16.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "16"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_17.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "17"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_18.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "18"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_19.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "19"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_20.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "20"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_21.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "21"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_22.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "22"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_23.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "23"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_24.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "24"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_25.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "25"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_26.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "26"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_27.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "27"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_28.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "28"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_29.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "29"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_30.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "30"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_31.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "31"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_32.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "32"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_33.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "33"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_34.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "34"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_35.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "35"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_36.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "36"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_37.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "37"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_38.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "38"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_39.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "39"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_40.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "40"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_41.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "41"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_42.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "42"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_43.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "43"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_44.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "44"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_45.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "45"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_46.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "46"
+  start_row: 9
+  column: 1
+  
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_47.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+  del_file_nm: "FXPositionTX_GPSXX_CTR_"
+  sheet_name: "47"
+  start_row: 9
+  column: 1
+  
+# - input_txt: "${GMT_INPUT_path}/${DATE}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}_48.dat"
+#   output_xlsx: "${GMT_OUTPUT_path}/GPS/590_MX AddOn/FXPositionTX_GPSXX_CTR_${DATE}.xlsx"
+#   upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/590_MX AddOn/GPSXX" 
+#   upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/590_MX AddOn"
+#   del_file_nm: "FXPositionTX_GPSXX_CTR_"
+#   sheet_name: "48"
+#   start_row: 9
+#   column: 1
+
+# ### GPS_625_TF-Reg  ###
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/625_TF-Reg/757.THBACTIV.GPS${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/625_TF-Reg/757.THBACTIV.GPS${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/625_TF-Reg" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/625_TF-Reg"
+  del_file_nm: "757.THBACTIV.GPS"
+  sheet_name: "757.THBACTIV"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/625_TF-Reg/GPS_FCDRecon_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/625_TF-Reg/GPS_FCDRecon_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/625_TF-Reg" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/625_TF-Reg"
+  del_file_nm: "GPS_FCDRecon_"
+  sheet_name: "GPS_FCDRecon"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/625_TF-Reg/TF_SETTLEMENT_GPSX_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/625_TF-Reg/TF_SETTLEMENT_GPSX_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/625_TF-Reg" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/625_TF-Reg"
+  del_file_nm: "TF_SETTLEMENT_GPSX_"
+  sheet_name: "TF_SETTLEMENT_GPSX"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/625_TF-Reg/TFREGGPSFTU_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/625_TF-Reg/TFREGGPSFTU_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/625_TF-Reg" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/625_TF-Reg"
+  del_file_nm: "TFREGGPSFTU_"
+  sheet_name: "TFREGGPSFTU"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/625_TF-Reg/TFREGGPSFTX_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/625_TF-Reg/TFREGGPSFTX_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/625_TF-Reg" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/625_TF-Reg"
+  del_file_nm: "TFREGGPSFTX_"
+  sheet_name: "TFREGGPSFTX"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/625_TF-Reg/TFREGGPSLTX_FCD_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/625_TF-Reg/TFREGGPSLTX_FCD_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/625_TF-Reg" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/625_TF-Reg"
+  del_file_nm: "TFREGGPSLTX_FCD_"
+  sheet_name: "TFREGGPSLTX_FCD"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/625_TF-Reg/TFREGGPSLTX_NRB_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/625_TF-Reg/TFREGGPSLTX_NRB_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/625_TF-Reg" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/625_TF-Reg"
+  del_file_nm: "TFREGGPSLTX_NRB_"
+  sheet_name: "TFREGGPSLTX_NRB"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/625_TF-Reg/TFREGGPSPTX_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/625_TF-Reg/TFREGGPSPTX_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/625_TF-Reg" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/625_TF-Reg"
+  del_file_nm: "TFREGGPSPTX_"
+  sheet_name: "TFREGGPSPTX"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/625_TF-Reg/TFREGGPSSUBREPEATING_FTX_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/625_TF-Reg/TFREGGPSSUBREPEATING_FTX_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/625_TF-Reg" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/625_TF-Reg"
+  del_file_nm: "TFREGGPSSUBREPEATING_FTX_"
+  sheet_name: "TFREGGPSSUBREPEATING_FTX"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/625_TF-Reg/TFREGGPSSUBREPEATING_LTX_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/625_TF-Reg/TFREGGPSSUBREPEATING_LTX_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/625_TF-Reg" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/625_TF-Reg"
+  del_file_nm: "TFREGGPSSUBREPEATING_LTX_"
+  sheet_name: "TFREGGPSSUBREPEATING_LTX"
+  start_row: 9
+  column: 1
+
+### GPS_718.02_EBAN ###
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/718.02_EBAN/GPSX_BATCH_SUMMARY_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/718.02_EBAN/GPSX_BATCH_SUMMARY_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/718.02_EBAN" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/718.02_EBAN"
+  del_file_nm: "GPSX_BATCH_SUMMARY_"
+  sheet_name: "Convert"
+  start_row: 6
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/718.02_EBAN/GPSX_FEE_TXN_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/718.02_EBAN/GPSX_FEE_TXN_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/718.02_EBAN" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/718.02_EBAN"
+  del_file_nm: "GPSX_FEE_TXN_"
+  sheet_name: "Convert"
+  start_row: 15
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/718.02_EBAN/GPSX_TURNOVER_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/718.02_EBAN/GPSX_TURNOVER_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/718.02_EBAN" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/718.02_EBAN"
+  del_file_nm: "GPSX_TURNOVER_"  
+  sheet_name: "Convert"
+  start_row: 15
+  column: 1
+
+##  GPS_735.01_Rtax ##
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/735.01_Rtax/RTAX_757_GPS_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/735.01_RTAX/RTAX_757_GPS_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/735.01_Rtax" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/735.01_Rtax"
+  del_file_nm: "RTAX_757_GPS_"
+  sheet_name: "Convert"
+  start_row: 9
+  column: 1
+
+## 516 LIPS ##
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN01${DATE}0700S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN01.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN01"
+  sheet_name: "7.00"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN01${DATE}0810S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN01.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN01"
+  sheet_name: "8.15"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN01${DATE}0925S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN01.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN01"
+  sheet_name: "9.25"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN01${DATE}1040S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN01.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN01"
+  sheet_name: "10.40"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN01${DATE}1210S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN01.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN01"
+  sheet_name: "12.10"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN01${DATE}1340S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN01.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN01"
+  sheet_name: "13.40"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN01${DATE}1440S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN01.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN01"
+  sheet_name: "14.40"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN01${DATE}1540S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN01.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN01"
+  sheet_name: "15.40"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN01${DATE}1640S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN01.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN01"
+  sheet_name: "16.40"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN01${DATE}1810S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN01.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN01"
+  sheet_name: "18.10"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN01${DATE}2010S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN01.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN01"
+  sheet_name: "20.10"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN01${DATE}2250S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN01.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN01"
+  sheet_name: "22.50"
+  start_row: 2
+  column: 1
+
+
+## 516 LIPS ##
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN02${DATE}0700S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN02.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN02"
+  sheet_name: "7.00"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN02${DATE}0810S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN02.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN02"
+  sheet_name: "8.15"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN02${DATE}0925S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN02.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN02"
+  sheet_name: "9.25"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN02${DATE}1040S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN02.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN02"
+  sheet_name: "10.40"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN02${DATE}1210S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN02.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN02"
+  sheet_name: "12.10"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN02${DATE}1340S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN02.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN02"
+  sheet_name: "13.40"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN02${DATE}1440S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN02.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN02"
+  sheet_name: "14.40"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN02${DATE}1540S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN02.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN02"
+  sheet_name: "15.40"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN02${DATE}1640S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN02.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN02"
+  sheet_name: "16.40"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN02${DATE}1810S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN02.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN02"
+  sheet_name: "18.10"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN02${DATE}2010S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN02.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN02"
+  sheet_name: "20.10"
+  start_row: 2
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GPS/516_LIPS/TN02${DATE}2250S0.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GPS/516_LIPS/LIPS_757_GPS_${DATE} - TN02.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GPS/Source File & GPS Transaction/516_LIPS" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GPS/Convert File/516_LIPS"
+  del_file_nm: "TN02"
+  sheet_name: "22.50"
+  start_row: 2
+  column: 1
+
+############################### GMT ###############################
+### GMT_71802_EBAN ###
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/71802_EBAN/gmt_comment_note_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/71802_EBAN/Batch_Comment_Note_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/71802_EBAN" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/71802_EBAN"
+  del_file_nm: "comment"
+  sheet_name: "Sheet1"
+  start_row: 7
+  column: 2
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/71802_EBAN/gmt_fee_txn_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/71802_EBAN/Batch_GMT_Fee_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/71802_EBAN" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/71802_EBAN"
+  del_file_nm: "fee"
+  sheet_name: "Sheet1"
+  start_row: 8
+  column: 2
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/71802_EBAN/gmt_payment_detail_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/71802_EBAN/Batch_Payment_Detail_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/71802_EBAN" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/71802_EBAN"
+  del_file_nm: "payment"
+  sheet_name: "Sheet1"
+  start_row: 7
+  column: 2
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/71802_EBAN/gmt_related_fx_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/71802_EBAN/Batch_Related_FX_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/71802_EBAN" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/71802_EBAN"
+  del_file_nm: "related"
+  sheet_name: "Sheet1"
+  start_row: 7
+  column: 2
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/71802_EBAN/gmt_related_party_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/71802_EBAN/Batch_Related_Party_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/71802_EBAN" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/71802_EBAN"
+  del_file_nm: "related"
+  sheet_name: "Sheet1"
+  start_row: 9
+  column: 2
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/71802_EBAN/gmt_related_ref_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/71802_EBAN/Batch_Related_Ref_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/71802_EBAN" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/71802_EBAN"
+  del_file_nm: "related"
+  sheet_name: "Sheet1"
+  start_row: 9
+  column: 2
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/71802_EBAN/gmt_settlement_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/71802_EBAN/Batch_Settlement_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/71802_EBAN" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/71802_EBAN"
+  del_file_nm: "settlement"
+  sheet_name: "Sheet1"
+  start_row: 7
+  column: 2
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/71802_EBAN/gmt_settlement_kbank_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/71802_EBAN/Batch_Settlement_KBank_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/71802_EBAN" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/71802_EBAN"
+  del_file_nm: "settlement"
+  sheet_name: "Sheet1"
+  start_row: 7
+  column: 2
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/71802_EBAN/gmt_transaction_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/71802_EBAN/Batch_Transaction_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/71802_EBAN" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/71802_EBAN"
+  del_file_nm: "transaction_"
+  sheet_name: "Sheet1"
+  start_row: 7
+  column: 2
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/71802_EBAN/gmt_turnover_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/71802_EBAN/Batch_GMT_TurnOver_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/71802_EBAN" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/71802_EBAN"
+  del_file_nm: "turnOver"
+  sheet_name: "Sheet1"
+  start_row: 7
+  column: 2
+
+### 00449_Utility ###
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/449_GTSUtility/REF_GMT_${DATE}.csv"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/00449_Utility/REF_GMT_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/00449_Utility" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/00449_Utility"
+  del_file_nm: "REF_GMT_"
+  sheet_name: "Sheet1"
+  start_row: 11
+  column: 2
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/449_GTSUtility/GMT_CONSOLE_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/00449_Utility/GMT_CONSOLE_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/00449_Utility" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/00449_Utility"
+  del_file_nm: "GMT_CONSOLE_"
+  sheet_name: "Sheet2"
+  start_row: 8
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/449_GTSUtility/GMT_CUST_${DATE_Path}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/00449_Utility/GMT_CUST_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/00449_Utility" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/00449_Utility"
+  del_file_nm: "GMT_CUST_"
+  sheet_name: "Sheet5"
+  start_row: 8
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/449_GTSUtility/GMT_DOCCER_${DATE}.TXT"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/00449_Utility/GMT_DOCCER_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/00449_Utility" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/00449_Utility"
+  del_file_nm: "GMT_DOCCER_"
+  sheet_name: "Sheet2"
+  start_row: 8
+  column: 1
+
+### 135_SBT ###
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/135_SBT/GMTX_SBT001_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/00499_ARE/GMTX_SBT001_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/00499_ARE" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/00499_ARE"
+  del_file_nm: "GMTX_SBT001"
+  sheet_name: "Sheet2"
+  start_row: 8
+  column: 1
+
+### 590_MX AddOn ###
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/590_MX AddOn/FXPositionTX_GMTXX_FEE_${DATE}_01.dat"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/00590_MX_Add On/FXPositionTX_GMTXX_FEE_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/00590_MX_ADDON" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/00590_MX_ADDON"
+  del_file_nm: "FXPositionTX_GMTXX_FEE_"
+  sheet_name: "Sheet2"
+  start_row: 5
+  column: 1
+
+### 735.01_Rtax ###
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/735.01_Rtax/RTAX_820_GMT_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/73501_RTAX/RTAX_820_GMT_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/73501_RTAX" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/73501_RTAX"
+  del_file_nm: "RTAX_820_GMT_"
+  sheet_name: "RTAX_820_GMT_20250422"
+  start_row: 4
+  column: 1
+
+### 718_ENHD ###
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/718_ENHD/gmt_related_party_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/00718_ENHD/gmt_related_party_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/00718_ENHD" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/00718_ENHD"
+  del_file_nm: "gmt_related_party_"
+  sheet_name: "Sheet2"
+  start_row: 9
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/718_ENHD/gmt_related_ref_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/00718_ENHD/gmt_related_ref_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/00718_ENHD" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/00718_ENHD"
+  del_file_nm: "gmt_related_ref_"
+  sheet_name: "Sheet2"
+  start_row: 11
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/718_ENHD/gmt_settlement_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/00718_ENHD/gmt_settlement_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/00718_ENHD" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/00718_ENHD"
+  del_file_nm: "gmt_settlement_"
+  sheet_name: "Sheet2"
+  start_row: 11
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/718_ENHD/gmt_settlement_kbank_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/00718_ENHD/gmt_settlement_kbank_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/00718_ENHD" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/00718_ENHD"
+  del_file_nm: "gmt_settlement_kbank_"
+  sheet_name: "Sheet2"
+  start_row: 11
+  column: 1
+
+- input_txt: "${GMT_INPUT_path}/${DATE}/GMT/718_ENHD/gmt_settlement_paynow_${DATE}.txt"
+  output_xlsx: "${GMT_OUTPUT_path}/GMT/00718_ENHD/gmt_settlement_paynow_${DATE}.xlsx"
+  upload_source: "${GMT_UPLOAD_Source_File}/GMT/Source File & GMT Transaction/00718_ENHD" 
+  upload_convert: "${GMT_UPLOAD_Convert_File}/GMT/Convert File/00718_ENHD"
+  del_file_nm: "gmt_settlement_paynow_"
+  sheet_name: "Sheet1"
+  start_row: 9
+  column: 1

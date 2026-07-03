@@ -1,0 +1,277 @@
+- query: "SELECT * FROM EP1M_CUSTOMER_PROFILE;"
+  saveto: "${DIRECTORY}/../Test_Data/GPS/${DATE}/EP1M_CUSTOMER_PROFILE_${DATE}.xlsx"
+  uploadto: "${GPS_UPLOAD_Convert_File}"
+  del_file_nm: "EP1M_CUSTOMER_PROFILE_"
+
+- query: "SELECT * FROM EP1M_COUNTER_RATE WHERE DATE_FORMAT(POS_TMS,'%Y-%m-%d') = DATE_FORMAT('${DATE1}','%Y-%m-%d');"
+  saveto: "${DIRECTORY}/../Test_Data/GPS/${DATE}/EP1M_Counter_Rate_${DATE}.xlsx"
+  uploadto: "${GPS_UPLOAD_Convert_File}"
+  del_file_nm: "EP1M_Counter_Rate_"
+
+- query: "SELECT * FROM IR_ITF_DIH_MID_RATE WHERE DATE(IDMR_POS_TMS)= '${DATE}';"
+  saveto: "${DIRECTORY}/../Test_Data/GPS/${DATE}/IR_ITF_DIH_MID_RATE_${DATE}.xlsx"
+  uploadto: "${GPS_UPLOAD_Convert_File}"
+  del_file_nm: "IR_ITF_DIH_MID_RATE_"
+
+- query: "select source.* from (
+          select
+              rpad(trn.OR_TXN_REF, 16, ' ') AS TXN_REF,
+              com1.CUSTTPCG_DESC CHANNAL_NAME,
+              prd.PD_CODE ,
+              trn.SECTION_RC_CD ,
+              trn.RC_CD ,
+              trn.OR_TXN_TYPE ,
+              trn.OR_TXN_PRIORITY ,
+              trn.OR_TXN_DATE ,
+              trn.OR_VALUE_DATE TXN_VALUE_DATE,
+              trn.OR_TXN_STATUS ,
+              trn.OR_STLMT_STATUS ,
+              trn.OR_DBTR_CIS_NO ,
+              trn.OR_DBTR_NAME ,
+              trn.OR_DBTR_PRIN_ACCT_NO ,
+              trn.OR_DBTR_PRIN_ACCT_CCY ,
+              trn.OR_DBTR_CUSTCY_ID ,
+              NULL creditor_cis_no , 
+              trn.OR_CRDTR_NAME creditor_name , 
+              trn.OR_CRDTR_ACCT_NO ,
+              trn.OR_TRF_CCY ,
+              NULL TXN_DR_CR,
+              trn.OR_TXN_AMT ,
+              trn.OR_TXN_CCY ,
+              trn.OR_TXN_RELATIONSHIP , 
+              com2.CUSTTPCG_DESC FX_OBJECTIVE_TYPE,
+              CASE WHEN trn.OR_FIX_THB_FLAG = 1 THEN 'Y'
+              else 'N' end as FX_THB_FLAG,
+              trn.OR_DETAIL_OF_CHARGE ,
+              trn.OR_FEE_ACCT_NO ,
+              trn.OR_FEE_ACCT_CCY ,
+              trn.OR_PURPOSE_CODE ,
+              trn.OR_PURPOSE_DESC ,
+              trn.OR_BOT_APRV_DOC_NO ,
+              trn.OR_ORDERING_REF ,
+              trn.OR_OTHER_REF ,
+              trn.OR_SWIFT_TYPE ,
+              CASE WHEN trn.OR_SWIFT_ONLY = 1 THEN 'Y'
+              WHEN trn.OR_SWIFT_ONLY = 0 THEN 'N'
+              end as SWIFT_ONLY,
+              STLMT.OR_STLMT_DATE AS STLMT_DATE,
+              cast(STLMT.OR_VALUE_DATE as date) AS STLMT_VALUE_DATE,
+              rpad(STLMT.OR_STLMT_TYPE, 50, ' ') AS STLMT_TYPE,
+              rpad(STLMT.OR_STLMT_SEQ, 10, ' ') AS STLMT_SEQ,
+              STLMT.OR_STLMT_AMT AS STLMT_AMT,
+              rpad(STLMT.OR_STLMT_CCY, 3, ' ') AS STLMT_CCY,
+              rpad(STLMT.OR_STLMT_STATUS, 50, ' ') AS STLMT_STATUS,
+              rpad(PMTDT.OR_PARTY, 50, ' ') AS PARTY,
+              rpad(PMTDT.OR_ACCOUNTING_TYPE, 2, ' ') AS ACCOUNTING_TYPE,
+              rpad(PMTDT.OR_PAYMENT_CODE, 10, ' ') AS PAYMENT_CODE,
+              PMTDT.OR_PMT_TYPE AS PMT_TYPE,
+              PMTDT.OR_PMT_AMT AS PMT_AMT,
+              rpad(PMTDT.OR_PMT_CCY, 3, ' ') AS PMT_CCY,
+              PMTDT.OR_RATE_FLAG AS RATE_FLAG,
+              PMTDT.OR_FX_STATUS AS FX_STATUS,
+              rpad(PMTDT.OR_FX_CONTRACT_NO, 10, ' ') AS FX_CONTRACT_NO,
+              PMTDT.OR_FX_STLMT_AMT AS FX_STLMT_AMT,
+              PMTDT.OR_FX_RATE AS FX_RATE,
+              rpad(PMTDT.OR_FX_TYPE, 2, ' ') AS FX_TYPE,
+              rpad(PMTDT.OR_FX_EVENT_ID, 10, ' ') AS FX_EVENT_ID,
+              rpad(PMTDT.OR_FX_COMPONENT_NO, 10, ' ') AS FX_COMPONENT_NO,
+              rpad(PMTDT.OR_FX_CNT_ORG, 10, ' ') AS FX_CNT_ORG,
+              rpad(PMTDT.OR_RATE_TYPE, 20, ' ') AS RATE_TYPE,
+              PMTDT.CNTER_RATE_FLAG AS CNTER_RATE_FLAG,
+              rpad(COMMON.CUSTTPCG_DESC, '20', ' ') AS BOOKING_TYPE,
+              PMTDT.OR_BOOKING_RATE AS BOOKING_RATE,
+              PMTDT.OR_TXN_AMT AS TXN_AMT,
+              PMTDT.OR_TXN_CCY AS TXN_CCY,
+              PMTDT.OR_FEE_AMT AS FEE_AMT,
+              PMTDT.OR_FEE_CCY AS FEE_CCY,
+              PMTDT.OR_BRANCH_AMT AS BRANCH_AMT,
+              PMTDT.OR_BRANCH_CCY AS BRANCH_CCY,
+              PMTDT.OR_BRANCH_RATE AS BRANCH_RATE,
+              PMTDT.OR_ACCT_NO AS ACCT_NO,
+              PMTDT.OR_ACCT_CCY AS ACCT_CCY,
+              PMTDT.OR_ACCT_NAME_EN AS ACCT_NAME_EN,
+              PMTDT.OR_ACCT_NAME_TH AS ACCT_NAME_TH,
+              PMTDT.OR_CIS_NO AS CIS_NO,
+              PMTDT.OR_FEE_CODE AS FEE_CODE,
+              PMTDT.OR_FEE_STATUS AS FEE_STATUS,
+              PMTDT.OR_REFER_OR_PMT_DETAIL_ID AS REFER_PMT_DETAIL_ID,
+              PMTDT.OR_PAY_CHARGE_FLAG AS PAY_CHARGE_FLAG,
+              PMTDT.OR_RELATED_REF AS RELATED_REF,
+              PMTDT.OR_SERVICE_BR AS SERVICE_BR,
+              PMTDT.OR_CHQ_CLEARING_FLAG AS CHQ_CLEARING_FLAG,
+              PMTDT.OR_OWNER_BR AS OWNER_BR,
+              PMTDT.OR_REMARK AS REMARK,
+              PMTDT.OR_PMT_LAST_LEVEL_FLAG AS PMT_LAST_LEVEL_FLAG,
+              PMTDT.OR_STLMT_DETAIL_ID AS STLMT_DETAIL_ID,
+              PMTDT.CREATE_DATE AS CREATE_DATE,
+              PMTDT.CREATE_BY AS CREATE_BY,
+              case
+                  when PMTDT.UPDATE_DATE is null then PMTDT.CREATE_DATE
+                  else PMTDT.UPDATE_DATE
+              end AS UPDATE_DATE,
+              case
+                  when PMTDT.UPDATE_BY is null then PMTDT.CREATE_BY
+                  else PMTDT.UPDATE_BY
+              end AS UPDATE_BY
+          from EP1T_OR_TRANSACTION trn  
+          left join EP1T_OR_PAYMENT_DETAIL PMTDT on trn.OR_TXN_REF = PMTDT.OR_TXN_REF
+          left join EP1T_OR_SETTLEMENT STLMT on PMTDT.OR_STLMT_ID = STLMT.OR_STLMT_ID
+          join EP1M_PRODUCT prd on prd.PD_ID  = trn.PD_ID 
+          left join EP1M_COMMON_DESC COMMON on
+              PMTDT.OR_BOOKING_TYPE = COMMON.CUSTTPCG_CODE and COMMON.CUSTTPCG_FIELD_NAME = 'EP1T_OR_BOOK_RATE.OR_BR_BOOK_TYPE'
+          left join EP1M_CHANNEL emc on emc.CHNL_ID  = trn.CHNL_ID 
+          left join EP1M_COMMON_DESC com1 on emc.CHNL_NAME = com1.CUSTTPCG_CODE and com1.CUSTTPCG_FIELD_NAME = 'EP1M_CHANNEL.CHNL_NAME'
+          left join EP1M_COMMON_DESC com2 on com2.CUSTTPCG_FIELD_NAME = 'EP1M_OR_TRANSACTION.FX_OBJECTIVE_TYPE' and com2.CUSTTPCG_CODE = trn.OR_FX_OBJECTIVE_TYPE 
+          UNION ALL 
+          select
+              rpad(trn.TRF_TXN_REF, 16, ' ') AS TXN_REF,
+              com1.CUSTTPCG_DESC CHANNAL_NAME,
+              prd.PD_CODE ,
+              trn.SECTION_RC_CD ,
+              trn.RC_CD ,
+              trn.TRF_TXN_TYPE ,
+              trn.TRF_TXN_PRIORITY ,
+              trn.TRF_TXN_DATE ,
+              trn.TRF_VALUE_DATE TXN_VALUE_DATE,
+              trn.TRF_TXN_STATUS ,
+              trn.TRF_STLMT_STATUS ,
+              trn.TRF_DBTR_CIS_NO ,
+              trn.TRF_DBTR_NAME ,
+              trn.TRF_DBTR_PRIN_ACCT_NO ,
+              trn.TRF_DBTR_PRIN_ACCT_CCY ,
+              trn.TRF_DBTR_CUSTCY_ID ,
+              NULL creditor_cis_no , 
+              trn.TRF_CRDTR_NAME creditor_name , 
+              trn.TRF_CRDTR_ACCT_NO ,
+              NULL TRF_CCY ,
+              trn.TRF_TXN_DR_CR ,
+              trn.TRF_TXN_AMT ,
+              trn.TRF_TXN_CCY ,
+              trn.TRF_TXN_RELATIONSHIP , 
+              com2.CUSTTPCG_DESC FX_OBJECTIVE_TYPE,
+              NULL FX_THB_FLAG,
+              NULL DETAIL_OF_CHARGE ,
+              trn.TRF_FEE_ACCT_NO ,
+              trn.TRF_FEE_ACCT_CCY ,
+              trn.TRF_PURPOSE_CODE ,
+              trn.TRF_PURPOSE_DESC ,
+              trn.TRF_BOT_APRV_DOC_NO ,
+              trn.TRF_ORDERING_REF ,
+              trn.TRF_OTHER_REF ,
+              NULL SWIFT_TYPE ,
+              NULL SWIFT_ONLY,
+              STLMT.TRF_STLMT_DATE AS STLMT_DATE,
+              cast(STLMT.TRF_VALUE_DATE as date) AS STLMT_VALUE_DATE,
+              rpad(STLMT.TRF_STLMT_TYPE, 50, ' ') AS STLMT_TYPE,
+              rpad(STLMT.TRF_STLMT_SEQ, 10, ' ') AS STLMT_SEQ,
+              STLMT.TRF_STLMT_AMT AS STLMT_AMT,
+              rpad(STLMT.TRF_STLMT_CCY, 3, ' ') AS STLMT_CCY,
+              rpad(STLMT.TRF_STLMT_STATUS, 50, ' ') AS STLMT_STATUS,
+              rpad(PMTDT.TRF_PARTY, 50, ' ') AS PARTY,
+              rpad(PMTDT.TRF_ACCOUNTING_TYPE, 2, ' ') AS ACCOUNTING_TYPE,
+              rpad(PMTDT.TRF_PAYMENT_CODE, 10, ' ') AS PAYMENT_CODE,
+              PMTDT.TRF_PMT_TYPE AS PMT_TYPE,
+              PMTDT.TRF_PMT_AMT AS PMT_AMT,
+              rpad(PMTDT.TRF_PMT_CCY, 3, ' ') AS PMT_CCY,
+              PMTDT.TRF_RATE_FLAG AS RATE_FLAG,
+              PMTDT.TRF_FX_STATUS AS FX_STATUS,
+              rpad(PMTDT.TRF_FX_CONTRACT_NO, 10, ' ') AS FX_CONTRACT_NO,
+              PMTDT.TRF_FX_STLMT_AMT AS FX_STLMT_AMT,
+              PMTDT.TRF_FX_RATE AS FX_RATE,
+              rpad(PMTDT.TRF_FX_TYPE, 2, ' ') AS FX_TYPE,
+              rpad(PMTDT.TRF_FX_EVENT_ID, 10, ' ') AS FX_EVENT_ID,
+              rpad(PMTDT.TRF_FX_COMPONENT_NO, 10, ' ') AS FX_COMPONENT_NO,
+              rpad(PMTDT.TRF_FX_CNT_ORG, 10, ' ') AS FX_CNT_ORG,
+              rpad(PMTDT.TRF_RATE_TYPE, 20, ' ') AS RATE_TYPE,
+              PMTDT.CNTER_RATE_FLAG AS CNTER_RATE_FLAG,
+              rpad(COMMON.CUSTTPCG_DESC, '20', ' ') AS BOOKING_TYPE,
+              PMTDT.TRF_BOOKING_RATE AS BOOKING_RATE,
+              PMTDT.TRF_TXN_AMT AS TXN_AMT,
+              PMTDT.TRF_TXN_CCY AS TXN_CCY,
+              PMTDT.TRF_FEE_AMT AS FEE_AMT,
+              PMTDT.TRF_FEE_CCY AS FEE_CCY,
+              PMTDT.TRF_BRANCH_AMT AS BRANCH_AMT,
+              PMTDT.TRF_BRANCH_CCY AS BRANCH_CCY,
+              PMTDT.TRF_BRANCH_RATE AS BRANCH_RATE,
+              PMTDT.TRF_ACCT_NO AS ACCT_NO,
+              PMTDT.TRF_ACCT_CCY AS ACCT_CCY,
+              PMTDT.TRF_ACCT_NAME_EN AS ACCT_NAME_EN,
+              PMTDT.TRF_ACCT_NAME_TH AS ACCT_NAME_TH,
+              PMTDT.TRF_CIS_NO AS CIS_NO,
+              PMTDT.TRF_FEE_CODE AS FEE_CODE,
+              PMTDT.TRF_FEE_STATUS AS FEE_STATUS,
+              PMTDT.TRF_REFER_TRF_PMT_DETAIL_ID AS REFER_PMT_DETAIL_ID,
+              PMTDT.TRF_PAY_CHARGE_FLAG AS PAY_CHARGE_FLAG,
+              PMTDT.TRF_RELATED_REF AS RELATED_REF,
+              PMTDT.TRF_SERVICE_BR AS SERVICE_BR,
+              PMTDT.TRF_CHQ_CLEARING_FLAG AS CHQ_CLEARING_FLAG,
+              PMTDT.TRF_OWNER_BR AS OWNER_BR,
+              PMTDT.TRF_REMARK AS REMARK,
+              PMTDT.TRF_PMT_LAST_LEVEL_FLAG AS PMT_LAST_LEVEL_FLAG,
+              PMTDT.TRF_STLMT_DETAIL_ID AS STLMT_DETAIL_ID,
+              PMTDT.CREATE_DATE AS CREATE_DATE,
+              PMTDT.CREATE_BY AS CREATE_BY,
+              case
+                  when PMTDT.UPDATE_DATE is null then PMTDT.CREATE_DATE
+                  else PMTDT.UPDATE_DATE
+              end AS UPDATE_DATE,
+              case
+                  when PMTDT.UPDATE_BY is null then PMTDT.CREATE_BY
+                  else PMTDT.UPDATE_BY
+              end AS UPDATE_BY
+          from EP1T_TRF_TRANSACTION trn  
+          left join EP1T_TRF_PAYMENT_DETAIL PMTDT on trn.TRF_TXN_REF = PMTDT.TRF_TXN_REF
+          left join EP1T_TRF_SETTLEMENT STLMT on PMTDT.TRF_STLMT_ID = STLMT.TRF_STLMT_ID
+          join EP1M_PRODUCT prd on prd.PD_ID  = trn.PD_ID 
+          left join EP1M_COMMON_DESC COMMON on
+              PMTDT.TRF_BOOKING_TYPE = COMMON.CUSTTPCG_CODE and COMMON.CUSTTPCG_FIELD_NAME = 'EP1T_TRF_BOOK_RATE.TRF_BR_BOOK_TYPE'
+          left join EP1M_CHANNEL emc on emc.CHNL_ID  = trn.CHNL_ID 
+          left join EP1M_COMMON_DESC com1 on emc.CHNL_NAME = com1.CUSTTPCG_CODE and com1.CUSTTPCG_FIELD_NAME = 'EP1M_CHANNEL.CHNL_NAME'
+          left join EP1M_COMMON_DESC com2 on com2.CUSTTPCG_FIELD_NAME = 'EP1M_TRF_TRANSACTION.FX_OBJECTIVE_TYPE' and com2.CUSTTPCG_CODE = trn.TRF_FX_OBJECTIVE_TYPE 
+          )source
+          where DATE_FORMAT(OR_TXN_DATE,'%Y-%m-%d') = DATE_FORMAT('${DATE1}','%Y-%m-%d') /*STLMT_DATE For TRANSACTION_SETT_YYYYMMDD*/
+          order by source.TXN_REF , source.channal_name , source.pd_code,source.section_rc_cd,source.rc_cd
+          ;"
+  saveto: "${DIRECTORY}/../Test_Data/GPS/${DATE}/TRANSACTION_SETT_${DATE}.xlsx"
+  uploadto: "${GPS_UPLOAD_Convert_File}"
+  del_file_nm: "TRANSACTION_SETT_"
+
+- query: "select * from IRIMP_DATA_TFREG_PTX_ITEM idtpi where DATE_FORMAT(REC_PAY_TXN_DATE,'%Y-%m-%d') between '${DATE1}' and '${DATE1}';"
+  saveto: "${DIRECTORY}/../Test_Data/GPS/${DATE}/TFREGGPSPTX_ITEM_${DATE}.xlsx"
+  uploadto: "${GPS_UPLOAD_Convert_File}/Convert File/625 TFReg"
+  del_file_nm: "TFREGGPSPTX_ITEM_"
+
+- query: "SELECT * FROM IR_VIEW_INCOMING_LEVEL WHERE DATE(UPDATE_DATE) = '${DATE}';"
+  saveto: "${DIRECTORY}/../Test_Data/GPS/${DATE}/IR_VIEW_INCOMING_LEVEL_${DATE}.xlsx"
+  uploadto: "${GPS_UPLOAD_Convert_File}/Convert File/718.02 EBAN"
+  del_file_nm: "IR_VIEW_INCOMING_LEVEL_"
+
+- query: "SELECT * FROM IR_VIEW_SETTLEMENT_LEVEL WHERE DATE(UPDATE_DATE) = '${DATE}';"
+  saveto: "${DIRECTORY}/../Test_Data/GPS/${DATE}/IR_VIEW_SETTLEMENT_LEVEL_${DATE}.xlsx"
+  uploadto: "${GPS_UPLOAD_Convert_File}/Convert File/718.02 EBAN"
+  del_file_nm: "IR_VIEW_SETTLEMENT_LEVEL_"
+
+- query: "SELECT * FROM IR_VIEW_TRANSACTION_LEVEL WHERE DATE(CREATE_DATE) = '${DATE}';"
+  saveto: "${DIRECTORY}/../Test_Data/GPS/${DATE}/IR_VIEW_TRANSACTION_LEVEL_${DATE}.xlsx"
+  uploadto: "${GPS_UPLOAD_Convert_File}/Convert File/718.02 EBAN"
+  del_file_nm: "IR_VIEW_TRANSACTION_LEVEL_"
+
+- query: "SELECT * FROM OR_VIEW_PAYMENT_DETAIL_LEVEL WHERE DATE(UPDATE_DATE) = '${DATE}';"
+  saveto: "${DIRECTORY}/../Test_Data/GPS/${DATE}/OR_VIEW_PAYMENT_DETAIL_LEVEL_${DATE}.xlsx"
+  uploadto: "${GPS_UPLOAD_Convert_File}/Convert File/718.02 EBAN"
+  del_file_nm: "OR_VIEW_PAYMENT_DETAIL_LEVEL_"
+
+- query: "SELECT * FROM OR_VIEW_SETTLEMENT_LEVEL WHERE DATE(UPDATE_DATE) = '${DATE}';"
+  saveto: "${DIRECTORY}/../Test_Data/GPS/${DATE}/OR_VIEW_SETTLEMENT_LEVEL_${DATE}.xlsx"
+  uploadto: "${GPS_UPLOAD_Convert_File}/Convert File/718.02 EBAN"
+  del_file_nm: "OR_VIEW_SETTLEMENT_LEVEL_"
+
+- query: "SELECT * FROM OR_VIEW_SWIFT_ADDRESS WHERE DATE(UPDATE_DATE) = '${DATE}';"
+  saveto: "${DIRECTORY}/../Test_Data/GPS/${DATE}/OR_VIEW_SWIFT_ADDRESS_${DATE}.xlsx"
+  uploadto: "${GPS_UPLOAD_Convert_File}/Convert File/718.02 EBAN"
+  del_file_nm: "OR_VIEW_SWIFT_ADDRESS_"
+
+- query: "SELECT * FROM OR_VIEW_TRANSACTION_LEVEL WHERE DATE(CREATE_DATE) = '${DATE}';"
+  saveto: "${DIRECTORY}/../Test_Data/GPS/${DATE}/OR_VIEW_TRANSACTION_LEVEL_${DATE}.xlsx"
+  uploadto: "${GPS_UPLOAD_Convert_File}/Convert File/718.02 EBAN"
+  del_file_nm: "OR_VIEW_TRANSACTION_LEVEL_"
