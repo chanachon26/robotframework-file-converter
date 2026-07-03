@@ -30,3 +30,11 @@ The system is designed for **end-to-end data conversion validation**, including 
 - Dynamic file renaming by date
 - Config-driven execution (YAML-based)
 - Reusable keyword libraries (Robot Framework)
+
+## Tech Stack
+- Robot Framework
+- Python 3.x
+- OpenPyXL
+- Paramiko (SFTP)
+- PyYAML
+- MariaDB Connector
